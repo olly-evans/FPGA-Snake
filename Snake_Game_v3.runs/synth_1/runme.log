@@ -1,0 +1,347 @@
+
+*** Running vivado
+    with args -log gametop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gametop.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Apr 10 13:47:20 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source gametop.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 528.906 ; gain = 200.793
+Command: read_checkpoint -auto_incremental -incremental H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/utils_1/imports/synth_1/vga.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/utils_1/imports/synth_1/vga.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top gametop -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18652
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1411.785 ; gain = 448.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'snake_died', assumed default net type 'wire' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/game_top.v:111]
+INFO: [Synth 8-6157] synthesizing module 'gametop' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/game_top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.runs/synth_1/.Xil/Vivado-14000-E10-1792F8EE/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.runs/synth_1/.Xil/Vivado-14000-E10-1792F8EE/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'controller' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'snake' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/snake.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'snake' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/snake.v:23]
+INFO: [Synth 8-6157] synthesizing module 'apple' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/apple.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'apple' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/apple.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_bcd' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/bin_to_bcd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_bcd' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/bin_to_bcd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seginterface' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/seginterface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/sevenseg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/sevenseg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seginterface' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/seginterface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LED_flash' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/LED_flash.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LED_flash' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/LED_flash.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LED_flash_death' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/LED_flash_death.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LED_flash_death' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/LED_flash_death.v:23]
+INFO: [Synth 8-6157] synthesizing module 'drawcontrol' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/drawcontrol.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.runs/synth_1/.Xil/Vivado-14000-E10-1792F8EE/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.runs/synth_1/.Xil/Vivado-14000-E10-1792F8EE/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.runs/synth_1/.Xil/Vivado-14000-E10-1792F8EE/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.runs/synth_1/.Xil/Vivado-14000-E10-1792F8EE/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'drawcontrol' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/drawcontrol.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga' [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/vga.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vga' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/vga.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'gametop' (0#1) [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/game_top.v:22]
+WARNING: [Synth 8-6014] Unused sequential element snakeX_reg[127] was removed.  [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/snake.v:98]
+WARNING: [Synth 8-6014] Unused sequential element snakeY_reg[127] was removed.  [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/snake.v:99]
+WARNING: [Synth 8-3848] Net dig6 in module/entity gametop does not have driver. [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/game_top.v:148]
+WARNING: [Synth 8-3848] Net dig5 in module/entity gametop does not have driver. [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/game_top.v:148]
+WARNING: [Synth 8-3848] Net dig4 in module/entity gametop does not have driver. [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/game_top.v:148]
+WARNING: [Synth 8-3848] Net dig3 in module/entity gametop does not have driver. [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/sources_1/new/game_top.v:148]
+WARNING: [Synth 8-7129] Port snake_died in module drawcontrol is either unconnected or has no load
+WARNING: [Synth 8-7129] Port apple in module drawcontrol is either unconnected or has no load
+WARNING: [Synth 8-7129] Port apple_valid in module drawcontrol is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module seginterface is either unconnected or has no load
+WARNING: [Synth 8-7129] Port snake_died in module apple is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module controller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1574.758 ; gain = 611.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1574.758 ; gain = 611.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1574.758 ; gain = 611.586
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1574.758 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [h:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
+Finished Parsing XDC File [h:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'inst'
+Parsing XDC File [h:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'drawcontrol_inst/inst'
+Finished Parsing XDC File [h:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'drawcontrol_inst/inst'
+Parsing XDC File [h:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'drawcontrol_inst/inst1'
+Finished Parsing XDC File [h:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'drawcontrol_inst/inst1'
+Parsing XDC File [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/constrs_1/new/nexys.xdc]
+Finished Parsing XDC File [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/constrs_1/new/nexys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.srcs/constrs_1/new/nexys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gametop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gametop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1674.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1674.438 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'drawcontrol_inst/inst' at clock pin 'clka' is different from the actual clock period '9.392', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'drawcontrol_inst/inst1' at clock pin 'clka' is different from the actual clock period '9.392', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  h:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  h:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for drawcontrol_inst/inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for drawcontrol_inst/inst1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   13 Bit       Adders := 256   
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 9     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 259   
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 144   
++---Muxes : 
+	   5 Input    6 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 13    
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP drawcontrol_inst/addr_info_reg, operation Mode is: C'+A2*(B:0x5a0).
+DSP Report: register vga_out/curr_y_r_reg is absorbed into DSP drawcontrol_inst/addr_info_reg.
+DSP Report: register vga_out/curr_x_r_reg is absorbed into DSP drawcontrol_inst/addr_info_reg.
+DSP Report: register drawcontrol_inst/addr_info_reg is absorbed into DSP drawcontrol_inst/addr_info_reg.
+DSP Report: operator drawcontrol_inst/addr_info0 is absorbed into DSP drawcontrol_inst/addr_info_reg.
+DSP Report: operator drawcontrol_inst/addr_info1 is absorbed into DSP drawcontrol_inst/addr_info_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:53 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+ Sort Area is  drawcontrol_inst/addr_info_reg_0 : 0 0 : 271 271 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|gametop     | C'+A2*(B:0x5a0) | 11     | 11     | 11     | -      | 18     | 1    | 0    | 1    | -    | -     | 0    | 1    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:59 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:01 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:03 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:06 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:06 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|gametop     | (C'+A'*B)'  | 11     | 11     | 11     | -      | 18     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_2 |         1|
+|3     |blk_mem_gen_1 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     2|
+|3     |clk_wiz     |     1|
+|4     |BUFG        |     1|
+|5     |CARRY4      |  1328|
+|6     |DSP48E1     |     1|
+|7     |LUT1        |   784|
+|8     |LUT2        |  3411|
+|9     |LUT3        |   303|
+|10    |LUT4        |  3947|
+|11    |LUT5        |   184|
+|12    |LUT6        |   356|
+|13    |FDRE        |  1159|
+|14    |FDSE        |  1532|
+|15    |IBUF        |     6|
+|16    |OBUF        |    45|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:06 . Memory (MB): peak = 1675.609 ; gain = 712.438
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:04 . Memory (MB): peak = 1675.609 ; gain = 611.586
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:07 . Memory (MB): peak = 1675.609 ; gain = 712.438
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1678.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1329 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1681.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a0dd3eee
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:24 . Memory (MB): peak = 1681.777 ; gain = 1140.043
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.318 . Memory (MB): peak = 1681.777 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/Documents/vivado_projs/ES3B2/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple/Snake_Game_v1.4_workingApple.runs/synth_1/gametop.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1681.777 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file gametop_utilization_synth.rpt -pb gametop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 13:49:06 2025...
