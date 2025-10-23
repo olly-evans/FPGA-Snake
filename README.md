@@ -14,3 +14,13 @@ https://youtu.be/x7fGMcoGL00
 - Collision detection, the snake dies if the head hits its own body or a boundary
 - Restart mechanism, snake resets position and size on game restart or death
 - Graphics, pixel rendering to draw the borders and the sprites
+
+# Extra Features
+- Mystery boxes -> there is a 12.5% chance that a mystery box shows up instead of an apple with four possible outcomes:
+    - Grow more (+3 length instead of +1)
+    - Speed up for 6 seconds
+    - Poison -> shrink or die
+    - Inverted direction input for seconds
+- LED Feedback -> Flashes green upon apple consumption and red upon death
+- High/Current score display -> shown on the seven segment display with high score on the left and current on the right
+- 
