@@ -4,3 +4,4 @@ The project runs on an FPGA development board, using VGA output for display and 
 
 # Video
 Video shows the functionality of the game, features, and block diagram of the games architecture.
+https://youtu.be/x7fGMcoGL00
